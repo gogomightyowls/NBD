@@ -101,8 +101,7 @@ object NBD1 extends App {
   //  c. Metody foldl wypisując tylko dni z nazwami zaczynającymi się na „P”
 
   def z4c(listaDni: List[String]):String = {
-    val listaP = listaDni.filter(_ startsWith("P"))
-    listaP.foldLeft("") ((d1 ,d2) =>  d1 + d2 + ", ")
+    listaDni.filter(_ startsWith("P")).foldLeft("") ((d1 ,d2) =>  d1 + d2 + ", ")
   }
 
   println("z4c " + z4c(listaDni))
