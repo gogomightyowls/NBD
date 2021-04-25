@@ -1,3 +1,31 @@
-{ "nInserted" : 1 }
+{ "nInserted" : 1 },
 
-printjson(db.people.find({first_name: "Michał", last_name: "St"}))
+// printjson(db.people.findOne({first_name: "Michał", last_name: "St"}))
+{
+  "_id" : ObjectId("608532c6f48bcff93d879228"),
+  "sex" : "Male",
+  "first_name" : "Michał",
+  "last_name" : "St",
+  "job" : "Student",
+  "email" : "s13080@p.e.pl",
+  "location" : {
+    "city" : "Warsaw",
+    "address" : {
+      "streetname" : "Zadaniowa",
+      "streetnumber" : "6"
+    }
+  },
+  "description" : "coś",
+  "height" : "180",
+  "weight" : "80",
+  "birth_date" : "1990-01-01T01:01:01Z",
+  "nationality" : "Polish",
+  "credit" : [
+    {
+      "type" : "mastercard",
+      "number" : "111111111111",
+      "currency" : "PLN",
+      "balance" : "100000000.0"
+    }
+  ]
+}
