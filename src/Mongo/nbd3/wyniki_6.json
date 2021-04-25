@@ -1,0 +1,3 @@
+{ "nInserted" : 1 }
+
+printjson(db.people.find(first_name: "Michał", last_name: "St"))
