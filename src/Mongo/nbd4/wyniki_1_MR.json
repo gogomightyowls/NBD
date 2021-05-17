@@ -1,0 +1,30 @@
+MongoDB shell version v4.4.5
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("18b45d00-a45b-49f7-aa67-3147006ecd48") }
+MongoDB server version: 4.4.5
+[ ]
+MongoDB shell version v4.4.5
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("dec30526-c3fe-4e3a-a5a5-99e8d5bd996a") }
+MongoDB server version: 4.4.5
+[ ]
+MongoDB shell version v4.4.5
+connecting to: mongodb://127.0.0.1:27017/people?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("b3fccb9d-f899-4880-a7ef-08f1d7925544") }
+MongoDB server version: 4.4.5
+[ ]
+MongoDB shell version v4.4.5
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("f178fa62-311c-412a-8d68-27a829e20d3f") }
+MongoDB server version: 4.4.5
+[ ]
+MongoDB shell version v4.4.5
+connecting to: mongodb://127.0.0.1:27017/people?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("bf22e0a6-f40e-416d-a753-5d9ce19272f9") }
+MongoDB server version: 4.4.5
+[ ]
+MongoDB shell version v4.4.5
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("99bbf755-efb0-441b-916d-7386a4321238") }
+MongoDB server version: 4.4.5
+[ ]

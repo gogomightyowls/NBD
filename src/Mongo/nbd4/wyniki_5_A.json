@@ -1,0 +1,367 @@
+[
+  {
+    "_id" : "XAF",
+    "avgCreditBalance" : 4698.22,
+    "totalCreditBalance" : 14094.66
+  },
+  {
+    "_id" : "TZS",
+    "avgCreditBalance" : 3526.1850000000004,
+    "totalCreditBalance" : 7052.370000000001
+  },
+  {
+    "_id" : "ILS",
+    "avgCreditBalance" : 5431.83,
+    "totalCreditBalance" : 16295.49
+  },
+  {
+    "_id" : "NOK",
+    "avgCreditBalance" : 4773.66,
+    "totalCreditBalance" : 4773.66
+  },
+  {
+    "_id" : "RSD",
+    "avgCreditBalance" : 4276.56,
+    "totalCreditBalance" : 4276.56
+  },
+  {
+    "_id" : "VUV",
+    "avgCreditBalance" : 6418.27,
+    "totalCreditBalance" : 6418.27
+  },
+  {
+    "_id" : "PLN",
+    "avgCreditBalance" : 5042.821111111111,
+    "totalCreditBalance" : 90770.78
+  },
+  {
+    "_id" : "SRD",
+    "avgCreditBalance" : 5286.68,
+    "totalCreditBalance" : 5286.68
+  },
+  {
+    "_id" : "IDR",
+    "avgCreditBalance" : 4907.918030303031,
+    "totalCreditBalance" : 323922.59
+  },
+  {
+    "_id" : "CZK",
+    "avgCreditBalance" : 4644.5525,
+    "totalCreditBalance" : 37156.42
+  },
+  {
+    "_id" : "BYR",
+    "avgCreditBalance" : 5095.79,
+    "totalCreditBalance" : 5095.79
+  },
+  {
+    "_id" : "YER",
+    "avgCreditBalance" : 4570.833333333333,
+    "totalCreditBalance" : 13712.5
+  },
+  {
+    "_id" : "CLP",
+    "avgCreditBalance" : 5252.2375,
+    "totalCreditBalance" : 21008.95
+  },
+  {
+    "_id" : "UAH",
+    "avgCreditBalance" : 5058.9800000000005,
+    "totalCreditBalance" : 40471.840000000004
+  },
+  {
+    "_id" : "NZD",
+    "avgCreditBalance" : 5328.46,
+    "totalCreditBalance" : 5328.46
+  },
+  {
+    "_id" : "GTQ",
+    "avgCreditBalance" : 5806.3,
+    "totalCreditBalance" : 5806.3
+  },
+  {
+    "_id" : "USD",
+    "avgCreditBalance" : 5040.66875,
+    "totalCreditBalance" : 80650.7
+  },
+  {
+    "_id" : "ZAR",
+    "avgCreditBalance" : 3930.306666666667,
+    "totalCreditBalance" : 11790.92
+  },
+  {
+    "_id" : "ALL",
+    "avgCreditBalance" : 3325.48,
+    "totalCreditBalance" : 3325.48
+  },
+  {
+    "_id" : "RUB",
+    "avgCreditBalance" : 4989.547916666666,
+    "totalCreditBalance" : 119749.15
+  },
+  {
+    "_id" : "RWF",
+    "avgCreditBalance" : 4632.88,
+    "totalCreditBalance" : 4632.88
+  },
+  {
+    "_id" : "KYD",
+    "avgCreditBalance" : 3760.89,
+    "totalCreditBalance" : 3760.89
+  },
+  {
+    "_id" : "IQD",
+    "avgCreditBalance" : 4269.39,
+    "totalCreditBalance" : 4269.39
+  },
+  {
+    "_id" : "JPY",
+    "avgCreditBalance" : 5078.7283333333335,
+    "totalCreditBalance" : 60944.74
+  },
+  {
+    "_id" : "MXN",
+    "avgCreditBalance" : 5022.9,
+    "totalCreditBalance" : 50229
+  },
+  {
+    "_id" : "TJS",
+    "avgCreditBalance" : 4087.71,
+    "totalCreditBalance" : 4087.71
+  },
+  {
+    "_id" : "ISK",
+    "avgCreditBalance" : 4316.41,
+    "totalCreditBalance" : 4316.41
+  },
+  {
+    "_id" : "IRR",
+    "avgCreditBalance" : 4417.373333333333,
+    "totalCreditBalance" : 26504.239999999998
+  },
+  {
+    "_id" : "BOB",
+    "avgCreditBalance" : 5263.3,
+    "totalCreditBalance" : 5263.3
+  },
+  {
+    "_id" : "PHP",
+    "avgCreditBalance" : 4941.928333333333,
+    "totalCreditBalance" : 118606.28
+  },
+  {
+    "_id" : "AMD",
+    "avgCreditBalance" : 4921.866,
+    "totalCreditBalance" : 24609.33
+  },
+  {
+    "_id" : "CAD",
+    "avgCreditBalance" : 5306.872727272727,
+    "totalCreditBalance" : 58375.6
+  },
+  {
+    "_id" : "CDF",
+    "avgCreditBalance" : 6114.4,
+    "totalCreditBalance" : 12228.8
+  },
+  {
+    "_id" : "ETB",
+    "avgCreditBalance" : 5436.11,
+    "totalCreditBalance" : 5436.11
+  },
+  {
+    "_id" : "EUR",
+    "avgCreditBalance" : 4901.8294,
+    "totalCreditBalance" : 245091.47
+  },
+  {
+    "_id" : "NPR",
+    "avgCreditBalance" : 5792.26,
+    "totalCreditBalance" : 5792.26
+  },
+  {
+    "_id" : "CNY",
+    "avgCreditBalance" : 4954.740842105263,
+    "totalCreditBalance" : 470700.38
+  },
+  {
+    "_id" : "BWP",
+    "avgCreditBalance" : 4076.29,
+    "totalCreditBalance" : 4076.29
+  },
+  {
+    "_id" : "MAD",
+    "avgCreditBalance" : 3818.85,
+    "totalCreditBalance" : 3818.85
+  },
+  {
+    "_id" : "VEF",
+    "avgCreditBalance" : 4166.64,
+    "totalCreditBalance" : 8333.28
+  },
+  {
+    "_id" : "MKD",
+    "avgCreditBalance" : 3835.05,
+    "totalCreditBalance" : 3835.05
+  },
+  {
+    "_id" : "MYR",
+    "avgCreditBalance" : 4781.12,
+    "totalCreditBalance" : 4781.12
+  },
+  {
+    "_id" : "VND",
+    "avgCreditBalance" : 4520.0325,
+    "totalCreditBalance" : 36160.26
+  },
+  {
+    "_id" : "SEK",
+    "avgCreditBalance" : 5060.013571428572,
+    "totalCreditBalance" : 70840.19
+  },
+  {
+    "_id" : "PKR",
+    "avgCreditBalance" : 4734.5,
+    "totalCreditBalance" : 18938
+  },
+  {
+    "_id" : "MMK",
+    "avgCreditBalance" : 4629.42,
+    "totalCreditBalance" : 4629.42
+  },
+  {
+    "_id" : "GBP",
+    "avgCreditBalance" : 6149.19,
+    "totalCreditBalance" : 6149.19
+  },
+  {
+    "_id" : "MWK",
+    "avgCreditBalance" : 3574.42,
+    "totalCreditBalance" : 3574.42
+  },
+  {
+    "_id" : "THB",
+    "avgCreditBalance" : 4604.392,
+    "totalCreditBalance" : 23021.96
+  },
+  {
+    "_id" : "MNT",
+    "avgCreditBalance" : 5428.9025,
+    "totalCreditBalance" : 21715.61
+  },
+  {
+    "_id" : "EGP",
+    "avgCreditBalance" : 5579.3,
+    "totalCreditBalance" : 5579.3
+  },
+  {
+    "_id" : "AFN",
+    "avgCreditBalance" : 5585.163333333334,
+    "totalCreditBalance" : 16755.49
+  },
+  {
+    "_id" : "KRW",
+    "avgCreditBalance" : 6689.91,
+    "totalCreditBalance" : 13379.82
+  },
+  {
+    "_id" : "CUP",
+    "avgCreditBalance" : 5005.78,
+    "totalCreditBalance" : 15017.34
+  },
+  {
+    "_id" : "ZMW",
+    "avgCreditBalance" : 5569.56,
+    "totalCreditBalance" : 5569.56
+  },
+  {
+    "_id" : "ZWL",
+    "avgCreditBalance" : 5792.17,
+    "totalCreditBalance" : 5792.17
+  },
+  {
+    "_id" : "UZS",
+    "avgCreditBalance" : 3573.03,
+    "totalCreditBalance" : 3573.03
+  },
+  {
+    "_id" : "ARS",
+    "avgCreditBalance" : 4648.4,
+    "totalCreditBalance" : 23242
+  },
+  {
+    "_id" : "PYG",
+    "avgCreditBalance" : 4874.69,
+    "totalCreditBalance" : 4874.69
+  },
+  {
+    "_id" : "XPF",
+    "avgCreditBalance" : 4759.07,
+    "totalCreditBalance" : 4759.07
+  },
+  {
+    "_id" : "XOF",
+    "avgCreditBalance" : 5960.683333333333,
+    "totalCreditBalance" : 17882.05
+  },
+  {
+    "_id" : "KZT",
+    "avgCreditBalance" : 3788.95,
+    "totalCreditBalance" : 3788.95
+  },
+  {
+    "_id" : "MGA",
+    "avgCreditBalance" : 4853.663333333333,
+    "totalCreditBalance" : 14560.99
+  },
+  {
+    "_id" : "NIO",
+    "avgCreditBalance" : 4985.64,
+    "totalCreditBalance" : 9971.28
+  },
+  {
+    "_id" : "BRL",
+    "avgCreditBalance" : 4512.001818181819,
+    "totalCreditBalance" : 49632.020000000004
+  },
+  {
+    "_id" : "COP",
+    "avgCreditBalance" : 4936.6825,
+    "totalCreditBalance" : 19746.73
+  },
+  {
+    "_id" : "LYD",
+    "avgCreditBalance" : 4382.495,
+    "totalCreditBalance" : 8764.99
+  },
+  {
+    "_id" : "BGN",
+    "avgCreditBalance" : 5300.22,
+    "totalCreditBalance" : 21200.88
+  },
+  {
+    "_id" : "HNL",
+    "avgCreditBalance" : 5504.863333333334,
+    "totalCreditBalance" : 16514.59
+  },
+  {
+    "_id" : "NGN",
+    "avgCreditBalance" : 4157.705,
+    "totalCreditBalance" : 24946.23
+  },
+  {
+    "_id" : "PEN",
+    "avgCreditBalance" : 4645.469999999999,
+    "totalCreditBalance" : 23227.35
+  },
+  {
+    "_id" : "HRK",
+    "avgCreditBalance" : 4870.964,
+    "totalCreditBalance" : 24354.82
+  },
+  {
+    "_id" : "DOP",
+    "avgCreditBalance" : 5168.6849999999995,
+    "totalCreditBalance" : 20674.739999999998
+  }
+]
