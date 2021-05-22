@@ -1,25 +1,34 @@
-//Średnią wagę i wzrost osób w bazie z podziałem na płeć (tzn. osobno mężczyzn, osobno kobiet);
-var mapFunction1 = function() {
+const mapFunction1 = function () {
     var rec = {
-        aheight: parseFloat(this.height),
-        aweight: parseFloat(this.weight)
+        "sH": parseFloat(this.height),
+        "sW": parseFloat(this.weight),
+        "count": 1
     }
     emit(this.sex, rec);
 };
 
-var reduceFunction1 = function(sex, values) {
-    var heights = values.map(x => x.aheight)
-    var weights = values.map(x => x.aweight)
+const reduceFunction1 = function (_, values) {
     return {
-        aH: Array.avg(heights),
-        aW: Array.avg(weights)
+        "sH": Array.sum(values.map(x => x.sH)),
+        "sW": Array.sum(values.map(x => x.sW)),
+        "count": Array.sum(values.map(x => x.count))
     };
 };
+
+const finalizeFunction = function(_, value) {
+    return{
+        "aH": (value["sH"] / value["count"]),
+        "aW": (value["sW"] / value["count"])
+    }
+}
+
 
 db.people.mapReduce(
     mapFunction1,
     reduceFunction1,
-    { out: "height_weight_mr" }
-)
+    {
+        finalize: finalizeFunction,
+        out: "height_weight_mr"
+    })
 
-printjson(db.people.height_weight_mr.find({}).toArray());
+printjson(db.height_weight_mr.find({}).toArray());
