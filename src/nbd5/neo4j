@@ -1,0 +1,40 @@
+1. Wszystkie filmy
+MATCH (n:Movie) RETURN n
+
+2. Wszystkie filmy, w których grał Hugo Weaving
+MATCH (p {name: 'Hugo Weaving'})-[r:ACTED_IN]->(m:Movie) RETURN m, p
+
+3. Reżyserzy filmów, w których grał Hugo Weaving
+MATCH (p {name: 'Hugo Weaving'})-[r:ACTED_IN]->(m:Movie)-[z:DIRECTED]-(d) RETURN d
+
+4. Wszystkie osoby, z którymi Hugo Weaving grał w tych samych filmach
+MATCH (p {name: 'Hugo Weaving'})-[r:ACTED_IN]->(m:Movie)-[z:ACTED_IN]-(a:Person) RETURN a
+
+5. Wszystkie filmy osób, które grały w Matrix
+MATCH (m:Movie {title:'The Matrix'})-[:ACTED_IN]-(p:Person)-[:ACTED_IN]->(z:Movie) return z
+
+6. Listę aktorów (aktor = osoba, która grała przynajmniej w jednym filmie) wraz z ilością filmów, w których grali
+MATCH (p:Person)-[a:ACTED_IN]->(m:Movie)
+WITH p, count(m) as movies
+RETURN p, movies
+
+7. Listę osób, które napisały scenariusz filmu, które wyreżyserowały wraz z tytułami takich filmów (koniunkcja – ten sam autor scenariusza i reżyser)
+MATCH (p:Person)-[a:WROTE]->(m:Movie)<-[:DIRECTED]-(p:Person) return p,m
+
+8. Listę filmów, w których grał zarówno Hugo Weaving jak i Keanu Reeves
+MATCH (x:Person)-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(z:Person) WHERE x.name = 'Keanu Reeves' AND z.name = 'Hugo Weaving' return m
+
+9. (za 2pkt) Zestaw zapytań powodujących uzupełnienie bazy danych o film Captain America: The First Avenger wraz z uzupełnieniem informacji o reżyserze, scenarzystach i odtwórcach głównych ról (w oparciu o skrócone informacje z IMDB - http://www.imdb.com/title/tt0458339/) + zapytanie pokazujące dodany do bazy film wraz odtwórcami głównych ról, scenarzystą i reżyserem. Plik SVG ma pokazywać wynik ostatniego zapytania.
+CREATE (Avenger:Movie {title: 'America: The First Avenger'})
+CREATE (CE:Person {name: 'Chris Evans'})
+CREATE (HA:Person {name: 'Hayley Atwell'})
+CREATE (SS:Person {name: 'Sebastian Stan'})
+CREATE (TLJ:Person {name: 'Tommy Lee Jones'})
+CREATE (JJ:Person {name: 'Joe Johnston'})
+CREATE (CM:Person {name: 'Christopher Markus'})
+CREATE (SM:Person {name: 'Stephen McFeely'})
+CREATE (CE)-[:ACTED_IN]->(Avenger), (HA)-[:ACTED_IN]->(Avenger), (SS)-[:ACTED_IN]->(Avenger), (TLJ)-[:ACTED_IN]->(Avenger),(Hugo)-[:ACTED_IN]->(Avenger),(JJ)-[:DIRECTED]->(Avenger),(CM)-[:WROTE]->(Avenger),(SM)-[:WROTE]->(Avenger)
+
+MATCH (m:Movie)-[]-(n:Person)
+WHERE m.title = 'America: The First Avenger'
+RETURN m,n
