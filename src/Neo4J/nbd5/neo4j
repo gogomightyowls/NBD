@@ -19,7 +19,7 @@ WITH p, count(m) as movies
 RETURN p, movies
 
 7. Listę osób, które napisały scenariusz filmu, które wyreżyserowały wraz z tytułami takich filmów (koniunkcja – ten sam autor scenariusza i reżyser)
-MATCH (p:Person)-[a:WROTE]->(m:Movie)<-[:DIRECTED]-(p:Person) return p,m
+MATCH (p:Person)-[:WROTE]->(m:Movie)<-[:DIRECTED]-(p:Person) return p,m
 
 8. Listę filmów, w których grał zarówno Hugo Weaving jak i Keanu Reeves
 MATCH (x:Person)-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(z:Person) WHERE x.name = 'Keanu Reeves' AND z.name = 'Hugo Weaving' return m
