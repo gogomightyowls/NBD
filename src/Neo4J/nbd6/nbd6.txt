@@ -1,0 +1,53 @@
+t 1.1. Znajdź trasy którymi można dostać się z Darjeeling na Sandakphu, mające najmniejszą ilość etapów
+MATCH p=shortestPath((start:town {name:"Darjeeling"})-[*]->(end:peak {name:"Sandakphu"})) return p
+
+t 1.2. Znajdź mające najmniej etapów trasy którymi można dostać się z Darjeeling na Sandakphu i które mogą być wykorzystywane zimą
+MATCH p=shortestPath((start:town {name:"Darjeeling"})-[*]->(end:peak {name:"Sandakphu"})) WHERE ALL (r IN RELATIONSHIPS(p) WHERE r.winter="true") return p
+
+t 1.3. Uszereguj trasy którymi można dostać się z Darjeeling na Sandakphu według dystansu
+MATCH (start:town {name:"Darjeeling"})-[*]->(end:peak {name:"Sandakphu"}) MATCH p = (start)-[*]->(end) WITH p, reduce(i=0, r IN RELATIONSHIPS(p)|i+r.distance) AS dist return p, dist order by dist
+
+
+
+t 2.4. Uszereguj porty lotnicze według ilości rozpoczynających się w nich lotów
+MATCH p = (f:Flight)-[o:ORIGIN]->(a:Airport)
+RETURN a, COUNT(o) AS fnum ORDER BY fnum
+
+t 2.5. Znajdź wszystkie porty lotnicze, do których da się dolecieć (bezpośrednio lub z przesiadkami) z Los Angeles (LAX) wydając mniej niż 3000
+MATCH p = (:Airport {name:"LAX"})<-[r1:ORIGIN]-(:Flight)-[r2:ORIGIN|DESTINATION*..10]->(:Airport)
+WHERE REDUCE(sum = 0, n IN [x IN NODES(p) WHERE 'Flight' IN LABELS(x)] | sum + [(n)<-[:ASSIGN]-(ticket) | ticket.price][0]) < 3000
+RETURN p
+
+t 2.6. Uszereguj połączenia, którymi można dotrzeć z Los Angeles (LAX) do Dayton (DAY) według ceny biletów
+MATCH p = (origin:Airport {name:"LAX"})<-[r1:ORIGIN]-(:Flight)-[r2:ORIGIN|DESTINATION*..10]->(destination:Airport {name: "DAY"})
+WITH p, REDUCE(sum = 0, n IN [x IN NODES(p) WHERE 'Flight' IN LABELS(x)] | sum + [(n)<-[:ASSIGN]-(ticket) | ticket.price][0]) as price
+RETURN p, price
+ORDER BY price desc
+//brak wynikow
+
+t 2.7. Znajdź najtańsze połączenie z Los Angeles (LAX) do Dayton (DAY)
+MATCH p = (origin:Airport {name:"LAX"})<-[r1:ORIGIN]-(:Flight)-[r2:ORIGIN|DESTINATION*..10]->(destination:Airport {name: "DAY"})
+WITH p, REDUCE(sum = 0, n IN [x IN NODES(p) WHERE 'Flight' IN LABELS(x)] | sum + [(n)<-[:ASSIGN]-(ticket) | ticket.price][0]) as price
+RETURN p, price
+ORDER BY price asc LIMIT 1
+//brak wynikow
+
+t 2.8. Znajdź najtańsze połączenie z Los Angeles (LAX) do Dayton (DAY) w klasie biznes
+MATCH p = (origin:Airport {name:"LAX"})<-[r1:ORIGIN]-(:Flight)-[r2:ORIGIN|DESTINATION*..10]->(destination:Airport {name: "DAY"})
+WITH p, REDUCE(sum = 0, n IN [x IN NODES(p) WHERE 'Flight' IN LABELS(x)] | sum + [(n)<-[:ASSIGN]-(ticket {class: 'business'}) | ticket.price][0]) as price
+RETURN p, price
+ORDER BY price asc LIMIT 1
+//brak wynikow
+
+t 2.9. Uszereguj linie lotnicze według ilości miast, pomiędzy którymi oferują połączenia (unikalnych miast biorących udział w relacjach :ORIGIN i :DESTINATION węzłów typu Flight obsługiwanych przez daną linię)
+MATCH (d:Airport)<-[:ORIGIN]-(f:Flight)-[:DESTINATION]->(a:Airport)
+WITH f, d.name + a.name as path
+RETURN f.airline as line, count(DISTINCT path) AS count
+ORDER BY count ASC
+
+t 2.10. Znajdź najtańszą trasę łączącą 3 różne porty lotnicze
+MATCH p = (a1:Airport)<-[:ORIGIN]-(:Flight)-[:DESTINATION]->(a2:Airport)<-[:ORIGIN]-(:Flight)-[:DESTINATION]->(a3:Airport)
+WHERE a1<>a2 AND a1<>a3 AND a2<>a3
+WITH p, REDUCE(sum = 0, n IN [x IN NODES(p) WHERE 'Flight' IN LABELS(x)] | sum + [(n)<-[:ASSIGN]-(ticket) | ticket.price][0]) as price
+RETURN p, price
+ORDER BY price asc LIMIT 1
