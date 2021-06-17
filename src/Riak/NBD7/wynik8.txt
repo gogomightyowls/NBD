@@ -1,0 +1,8 @@
+MacBook-Pro-3:~ michal$ curl -XPOST -i -H "Content-Type: application/json" -d "{ 'name': 'Michał2'}" http://localhost:8098/buckets/s13080/keys
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s13080/keys/8SwhVvzhGz6UFgJvaGRxPa6SIVr
+Date: Thu, 17 Jun 2021 06:42:34 GMT
+Content-Type: application/json
+Content-Length: 0

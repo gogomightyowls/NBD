@@ -1,0 +1,13 @@
+MacBook-Pro-3:~ michal$ curl -XGET -i http://localhost:8098/buckets/s13080/keys/8SwhVvzhGz6UFgJvaGRxPa6SIVr
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8J9gnVuoU/YiHCCUy5rEy3Mqyv8WXBQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s13080>; rel="up"
+Last-Modified: Thu, 17 Jun 2021 06:42:34 GMT
+ETag: "3pQ2pL427P6PKL1vw9Kqa2"
+Date: Thu, 17 Jun 2021 06:44:21 GMT
+Content-Type: application/json
+Content-Length: 21
+
+{ 'name': 'Michał2'}

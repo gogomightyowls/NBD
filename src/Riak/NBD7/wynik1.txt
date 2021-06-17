@@ -1,0 +1,60 @@
+MacBook-Pro-3:~ michal$ curl -i -XPOST \
+>     -H "Content-Type: application/json" \
+>     -d "{ 'name': 'Michał', 'age': 36, 'hobby': 'cycling', 'max speed': 57.2}" \
+>     http://localhost:8098/buckets/s13080/keys
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s13080/keys/9L7iWfNdjTnghHsrjo4GrJeaKyP
+Date: Thu, 17 Jun 2021 06:24:53 GMT
+Content-Type: application/json
+Content-Length: 0
+
+MacBook-Pro-3:~ michal$ curl -i -XPOST \
+>     -H "Content-Type: application/json" \
+>     -d "{ 'name': 'Adam', 'age': 20, 'hobby': 'running', 'max speed': 15.4}" \
+>     http://localhost:8098/buckets/s13080/keys
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s13080/keys/FdmjL9bFncbdn2W4YZsfP8q5Vtw
+Date: Thu, 17 Jun 2021 06:25:25 GMT
+Content-Type: application/json
+Content-Length: 0
+
+MacBook-Pro-3:~ michal$ curl -i -XPOST \
+>     -H "Content-Type: application/json" \
+>     -d "{ 'name': 'Piotr', 'age': 25, 'hobby': 'motocycles', 'max speed': 120.4}" \
+>     http://localhost:8098/buckets/s13080/keys
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s13080/keys/VxLnNzfffKR9Hf4RQCBAcRGLvcU
+Date: Thu, 17 Jun 2021 06:25:59 GMT
+Content-Type: application/json
+Content-Length: 0
+
+MacBook-Pro-3:~ michal$ curl -i -XPOST \
+>     -H "Content-Type: application/json" \
+>     -d "{ 'name': 'Robert', 'age': 19, 'hobby': 'cycling', 'max speed': 62.2}" \
+>     http://localhost:8098/buckets/s13080/keys
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s13080/keys/essy37l7XwVhN2ekRJqjZwiBtH
+Date: Thu, 17 Jun 2021 06:26:49 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+MacBook-Pro-3:~ michal$ curl -i -XPOST \
+>     -H "Content-Type: application/json" \
+>     -d "{ 'name': 'Tomek', 'age': 50, 'hobby': 'walking', 'max speed': 7.1}" \
+>     http://localhost:8098/buckets/s13080/keys
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s13080/keys/DfwpvB7HHawCVLMebbv9nydiANX
+Date: Thu, 17 Jun 2021 06:27:26 GMT
+Content-Type: application/json
+Content-Length: 0
