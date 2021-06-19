@@ -1,0 +1,8 @@
+{'Vary': 'Accept-Encoding', 'Server': 'MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)', 'Date': 'Sat, 19 Jun 2021 07:06:05 GMT', 'Content-Type': 'application/json', 'Content-Length': '0', 'Content-Encoding': 'gzip'}
+{"name": "Michal", "age": 36, "hobby": "cycling", "max speed": 57.2, "fav drink": "coffee"}
+{'Vary': 'Accept-Encoding', 'Server': 'MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)', 'Date': 'Sat, 19 Jun 2021 07:06:05 GMT', 'Content-Type': 'application/json', 'Content-Length': '0', 'Content-Encoding': 'gzip'}
+{"name": "Rafal", "age": 36, "hobby": "cycling", "max speed": 57.2, "fav drink": "coffee"}
+{'Vary': 'Accept-Encoding', 'Server': 'MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)', 'Date': 'Sat, 19 Jun 2021 07:06:05 GMT', 'Content-Type': 'application/json', 'Content-Length': '0', 'Content-Encoding': 'gzip'}
+{'X-Riak-Vclock': 'a85hYGBgzGDKBVI8J9gnVuqUBuQD2SwZTInMeawMscJOt/iyAA==', 'X-Riak-Deleted': 'true', 'Server': 'MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)', 'Date': 'Sat, 19 Jun 2021 07:06:05 GMT', 'Content-Type': 'text/plain', 'Content-Length': '10'}
+
+Process finished with exit code 0
